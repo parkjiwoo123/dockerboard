@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>List</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>제목</th>
+        <th>작성자</th>
+      </tr>
+      <% for ( let i in list ) { %>
+      <tr>
+        <td><a href="/board/<%=list[i].id%>"><%= list[i].subject %></a></td>
+        <td><%= list[i].writer %></td>
+      </tr>
+      <% } %>
+    </table>
+    <a href="/board/write">글쓰기</a>
+  </body>
+</html>

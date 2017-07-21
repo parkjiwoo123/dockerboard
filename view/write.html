@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Write</title>
+    <script src="/js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $().ready(function() {
+        alert("jQuery is Ready!");
+      });
+    </script>
+  </head>
+  <body>
+    <form action="/board/write" method="post" enctype="multipart/form-data">
+      <input type="text" name="subject" /><br/>
+      <input type="text" name="writer" /><br/>
+      <input type="file" name="file" /><br/>
+      <textarea name="content" rows="8" cols="80"></textarea><br/>
+      <input type="submit" value="등록">
+    </form>
+  </body>
+</html>
