@@ -14,5 +14,6 @@ app.use(function(req, res) {
 });
 
 app.listen(3000, function() {
+  console.log("automated push test");
   console.log("Server running at http://localhost:3000");
 });
